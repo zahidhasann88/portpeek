@@ -1,0 +1,35 @@
+Port:          8080
+Protocol:      tcp
+Family:        ipv4
+Address:       0.0.0.0
+State:         LISTEN
+Remote:        -
+PID:           2100
+Parent PID:    -
+Process:       docker-proxy
+User:          root
+Command:       /usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8080
+Executable:    -
+Working dir:   -
+Started:       -
+Container:     web
+  ID:          7f3a9c2e1b4d
+  Image:       nginx:1.27-alpine
+
+Port:          5432
+Protocol:      tcp
+Family:        ipv4
+Address:       127.0.0.1
+State:         LISTEN
+Remote:        -
+PID:           -
+Parent PID:    -
+Process:       -
+User:          -
+Command:       -
+Executable:    -
+Working dir:   -
+Started:       -
+Container:     analytics_db
+  ID:          0123456789ab
+  Image:       postgres:16

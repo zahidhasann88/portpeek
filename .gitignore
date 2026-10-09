@@ -1,0 +1,33 @@
+# Binaries and build output
+/portpeek
+/portpeek.exe
+/dist/
+/bin/
+*.exe
+*.test
+*.out
+*.prof
+
+# Tooling caches
+coverage.out
+coverage.html
+.golangci-cache/
+
+# Editor and OS files
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Local review notes and secrets
+/build-prompt.txt
+/after-build-report.txt
+/PUBLISHING.md
+/VERIFICATION.md
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+!.env.dist

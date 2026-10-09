@@ -1,0 +1,6 @@
+PORT  PROTO  ADDRESS    PID   PROCESS       USER   CONTAINER
+22    tcp    0.0.0.0    812   sshd          root   -
+3000  tcp    ::         4311  node          alice  -
+5353  udp    0.0.0.0    -     -             -      -
+5432  tcp    127.0.0.1  -     analytics_db  -      analytics_db (0123456789ab)
+8080  tcp    0.0.0.0    2100  web           root   web (7f3a9c2e1b4d)

@@ -1,0 +1,47 @@
+[
+  {
+    "Id": "7f3a9c2e1b4d8a6f0e5c3b2a1d9f8e7c6b5a4f3e2d1c0b9a8f7e6d5c4b3a2f1e",
+    "Names": ["/web"],
+    "Image": "nginx:1.27-alpine",
+    "ImageID": "sha256:0d17b565c37bcbd895e9d92315a05c1c3c9a29f762b011a10c54a66cd53c9b31",
+    "Command": "/docker-entrypoint.sh nginx -g 'daemon off;'",
+    "Created": 1760000000,
+    "State": "running",
+    "Status": "Up 2 hours",
+    "Ports": [
+      {"IP": "0.0.0.0", "PrivatePort": 80, "PublicPort": 8080, "Type": "tcp"},
+      {"IP": "::", "PrivatePort": 80, "PublicPort": 8080, "Type": "tcp"},
+      {"PrivatePort": 443, "Type": "tcp"}
+    ]
+  },
+  {
+    "Id": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+    "Names": ["/analytics_db", "/project_db"],
+    "Image": "postgres:16",
+    "State": "running",
+    "Status": "Up 3 days",
+    "Ports": [
+      {"IP": "127.0.0.1", "PrivatePort": 5432, "PublicPort": 5432, "Type": "tcp"}
+    ]
+  },
+  {
+    "Id": "fedcba9876543210fedcba9876543210fedcba9876543210fedcba9876543210",
+    "Names": ["/dns"],
+    "Image": "coredns/coredns:1.11.1",
+    "State": "running",
+    "Status": "Up 5 days",
+    "Ports": [
+      {"IP": "0.0.0.0", "PrivatePort": 53, "PublicPort": 5353, "Type": "udp"},
+      {"IP": "0.0.0.0", "PrivatePort": 9153, "PublicPort": 0, "Type": "tcp"},
+      {"IP": "0.0.0.0", "PrivatePort": 1234, "PublicPort": 1234, "Type": "sctp"}
+    ]
+  },
+  {
+    "Id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "Names": [],
+    "Image": "busybox:latest",
+    "State": "running",
+    "Status": "Up 1 minute",
+    "Ports": []
+  }
+]

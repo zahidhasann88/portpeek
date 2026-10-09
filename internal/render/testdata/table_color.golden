@@ -1,0 +1,5 @@
+[1mPORT[0m  [1mPROTO[0m  [1mADDRESS[0m    [1mPID[0m   [1mPROCESS[0m       [1mUSER[0m   [1mCONTAINER[0m
+22    tcp    0.0.0.0    812   sshd          root   [2m-[0m
+3000  tcp    ::         4311  node          alice  [2m-[0m
+5353  udp    0.0.0.0    [2m-[0m     [2m-[0m             [2m-[0m      [2m-[0m
+5432  tcp    127.0.0.1  [2m-[0m     analytics_db  [2m-[0m      analytics_db (0123456789ab)

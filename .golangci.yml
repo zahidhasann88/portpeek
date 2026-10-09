@@ -1,0 +1,31 @@
+version: "2"
+
+run:
+  timeout: 5m
+  tests: true
+
+linters:
+  default: standard
+  enable:
+    - bodyclose
+    - errorlint
+    - gocritic
+    - misspell
+    - noctx
+    - unconvert
+    - unparam
+  settings:
+    errcheck:
+      check-type-assertions: true
+  exclusions:
+    presets:
+      - comments
+    rules:
+      # Test helpers may ignore errors from writers and cleanup calls.
+      - path: _test\.go
+        linters:
+          - errcheck
+
+formatters:
+  enable:
+    - gofmt

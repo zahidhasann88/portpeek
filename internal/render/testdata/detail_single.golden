@@ -1,0 +1,15 @@
+Port:          3000
+Protocol:      tcp
+Family:        ipv6
+Address:       ::
+State:         LISTEN
+Remote:        -
+PID:           4311
+Parent PID:    4300
+Process:       node
+User:          alice
+Command:       node server.js --port 3000
+Executable:    /usr/bin/node
+Working dir:   /home/alice/app
+Started:       2026-10-09T10:30:00Z
+Container:     -
