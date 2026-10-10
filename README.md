@@ -4,6 +4,10 @@ Portpeek shows which applications and Docker containers are using your local net
 
 > **Status:** early release (v0.1.0). The command-line interface and JSON schema are documented below. Changes are listed in [CHANGELOG.md](CHANGELOG.md); before 1.0 they may change in minor releases.
 
+![Portpeek showing local TCP ports and their owning processes on Windows](docs/images/portpeek.PNG)
+
+*Windows example filtered to show VS Code processes.*
+
 ## Features
 
 - Lists listening TCP and UDP sockets with the port, protocol, bind address, PID, process name, user, and owning Docker container.
