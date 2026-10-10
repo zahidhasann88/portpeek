@@ -5,6 +5,12 @@ updates:
     schedule:
       interval: weekly
     open-pull-requests-limit: 5
+    # These newer versions require Go 1.23 or later.
+    ignore:
+      - dependency-name: golang.org/x/term
+        versions: ['>=0.30.0']
+      - dependency-name: golang.org/x/sys
+        versions: ['>=0.31.0']
     groups:
       go-modules:
         patterns: ["*"]
