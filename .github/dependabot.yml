@@ -7,6 +7,8 @@ updates:
     open-pull-requests-limit: 5
     # These newer versions require Go 1.23 or later.
     ignore:
+      - dependency-name: github.com/Microsoft/go-winio
+        versions: ['>=0.6.3']
       - dependency-name: golang.org/x/term
         versions: ['>=0.30.0']
       - dependency-name: golang.org/x/sys
